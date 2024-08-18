@@ -10,10 +10,12 @@
 	<script>
 		function secondHighest(arr) {
 		let x = -Infinity;
+			
 			let y = -Infinity;
 			for(let i = 0; i<arr.length; i++){
 				let num = +arr[i];
-				if(num>=x){
+			if(num>=x){
+				     y = x;
 					 x = num;
 				}else{
 					if(num>y){
