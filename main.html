@@ -9,7 +9,20 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
+			const x = 0;
+			 const y = 0;
+			for(int i = 0; i<arr.length; i++){
+				if(arr[i]>x){
+					 x = arr[i];
+				}else{
+					if(arr[i]>y){
+						y = arr[i];
+					}
+				}
+			}
+			if(arr.length<=1 || y===0){
+				return -Infinity;
+			}
 			
 		}
 
