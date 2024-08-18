@@ -14,16 +14,16 @@
 			let y = -Infinity;
 			for(let i = 0; i<arr.length; i++){
 				let num = +arr[i];
-			if(num>=x){
+			if(num>x){
 				     y = x;
 					 x = num;
 				}else{
-					if(num>y){
+					if(num!==x && num>y){
 						y = num;
 					}
 				}
 			}
-			
+		
 			return y;
 		}
 
